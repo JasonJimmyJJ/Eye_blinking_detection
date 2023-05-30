@@ -28,7 +28,7 @@
 
 ### 2.1 The dlib library is used for facial feature point recognition
 
-The Dlib library can detect 68 feature points in face recognition, as shown in Figure 2 below, and obtain the indexes of the left and right eye facial marks respectively. The video stream is gray-scale processed by OpenCV to detect the location information of the human eye.
+The Dlib library can detect 68 feature points in face recognition, as shown in Figure 2 below, and obtain the indexes of the left and right eye facial marks respectively. The video stream is gray-scale processed by OpenCV to detect the location information of the human eye.^[https://blog.csdn.net/cungudafa/article/details/103477960]
 
 <br/>
 <div align=center>
@@ -37,7 +37,7 @@ The Dlib library can detect 68 feature points in face recognition, as shown in F
 
 ### 2.2 The aspect ratio of the eye is calculated to determine whether the eye blinks or not
 
-Calculate the Eye Aspect Ratio (EAR). When the human eye is open, the EAR fluctuates around a certain value, and when the human eye is closed, the EAR drops rapidly and theoretically approaches zero. At that time, face detection models were not so accurate. So we think that when the EAR is below a certain threshold, the eye is closed. To detect the number of blinks, we need to set the number of consecutive frames of the same blink. Blinking speed is relatively fast, generally 1~3 frames to complete the blinking action. Both thresholds should be set according to the actual situation.
+Calculate the Eye Aspect Ratio (EAR). When the human eye is open, the EAR fluctuates around a certain value, and when the human eye is closed, the EAR drops rapidly and theoretically approaches zero. At that time, face detection models were not so accurate. So we think that when the EAR is below a certain threshold, the eye is closed. To detect the number of blinks, we need to set the number of consecutive frames of the same blink. Blinking speed is relatively fast, generally 1~3 frames to complete the blinking action. Both thresholds should be set according to the actual situation.[<sup>1</sup>](#refer-anchor-1)
 
 <br/>
 <div align=center>
@@ -84,3 +84,8 @@ Can basically complete the experiment, more accurate judgment of complete and in
 ### 3.2 Disadvantages
 
 Blinking data in real-world tests is more complex than it should be. Blinking rates can vary and the person's head can shake, making the measurement unstable.
+
+## References
+
+<div id="refer-anchor-1"></div>
+- [1] [Dlib模型之驾驶员疲劳检测一](https://blog.csdn.net/cungudafa/article/details/103477960)
