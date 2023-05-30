@@ -4,8 +4,9 @@
 ## 1. Results and test
 
 ### 1.1 Determine the maximum and minimum value of EAR
-
+<div align=center>
 <img width="246" alt="image" src="https://github.com/JasonJimmyJJ/Eye_blinking_detection/assets/134904329/89db2b78-2c46-4d36-a9f9-f907360980a7">
+</div>
 
 ### 1.2 Start counting and display the count of complete and incomplete eye closing times in real time
 
