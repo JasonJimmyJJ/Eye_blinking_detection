@@ -75,5 +75,12 @@ Are both eyes blinking at the same rate? By analyzing the EAR values of the left
 <img width="337" alt="image" src="https://github.com/JasonJimmyJJ/Eye_blinking_detection/assets/134904329/aaf66e5e-e77b-46a1-9146-45580e70552e">
 </div>
 
+## 3. pros and cons
 
+### 3.1 Advantages
 
+Can basically complete the experiment, more accurate judgment of complete and incomplete blink, and can be achieved at a faster speed, but also can display the change of EAR value in real time, good visibility. In the early stage, the operation is guided and the relevant standards are set, which has certain robustness.
+
+### 3.2 Disadvantages
+
+Blinking data in real-world tests is more complex than it should be. Blinking rates can vary and the person's head can shake, making the measurement unstable.
