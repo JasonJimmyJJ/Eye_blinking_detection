@@ -71,11 +71,11 @@ while True:
         # y = landmarks.part(36).y
         # cv2.circle(frame, (x, y), 3, (0, 0, 255), 2)
 
-        # 得到左右眼的比率
+        # Get both eyes ratio
         left_eye_ratio = get_blinking_ratio([36, 37, 38, 39, 40, 41], landmarks)
         right_eye_ratio = get_blinking_ratio([42, 43, 44, 45, 46, 47], landmarks)
 
-        # 求出亮眼的平均比率
+        # the average ratio
         blinking_ratio = (left_eye_ratio+right_eye_ratio)/2
 
         if 50 < start_time < 200:
@@ -84,7 +84,7 @@ while True:
             hor_line = cv2.line(frame, (700, 150), (800, 150), (0, 0, 255), 2)
             ver_line = cv2.line(frame, (750, 100), (750, 200), (0, 0, 255), 2)
 
-            # 找到最大及最小的比率
+            # Find max and min programe
             if blinking_ratio > max_ratio:
                 max_ratio = blinking_ratio
 
@@ -107,8 +107,8 @@ while True:
             plt.plot(x_cor, y_cor)
             # plt.plot(x_cor, y_cor_2)
 
-            plt.pause(0.001)  # 暂停0.01秒
-            plt.ioff()  # 关闭画图的窗口
+            plt.pause(0.001)
+            plt.ioff()  # close poloting window
 
             text1 = 'max ratio is ' + str(max_ratio)[:5]
             text2 = 'min ratio is ' + str(min_ratio)[:5]
